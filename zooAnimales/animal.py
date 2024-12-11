@@ -49,11 +49,11 @@ class Animal:
         from zooAnimales.mamifero import Mamifero
         from zooAnimales.pez import Pez
         from zooAnimales.reptil import Reptil
-        return f"Mamíferos: {Mamifero.cantidadMamiferos()}\n" \
-               f"Aves: {Ave.cantidadAves()}\n" \
-               f"Reptiles: {Reptil.cantidadReptiles()}\n" \
-               f"Peces: {Pez.cantidadPeces()}\n" \
-               f"Anfibios: {Anfibio.cantidadAnfibios()}"
+        return f"Mamíferos : {Mamifero.cantidadMamiferos()}\n" \
+               f"Aves : {Ave.cantidadAves()}\n" \
+               f"Reptiles : {Reptil.cantidadReptiles()}\n" \
+               f"Peces : {Pez.cantidadPeces()}\n" \
+               f"Anfibios : {Anfibio.cantidadAnfibios()}"
     
     def movimiento(self):
         return "desplazarse"
