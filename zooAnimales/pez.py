@@ -6,8 +6,8 @@ class Pez(Animal):
     salmones=0
     bacalaos=0
 
-    def __init__(self, nombre="", edad=0, habitat="", genero="", zona=None, colorEscamas="", cantidadAletas=0):
-        super().__init__(nombre, edad, habitat, genero, zona)
+    def __init__(self, nombre="", edad=0, habitat="", genero="", colorEscamas="", cantidadAletas=0):
+        super().__init__(nombre, edad, habitat, genero)
         self._colorEscamas=colorEscamas
         self._cantidadAletas=cantidadAletas
         Pez.listado.append(self)
@@ -27,14 +27,14 @@ class Pez(Animal):
     
 
     @staticmethod
-    def crearSalmon(nombre, edad, genero, zona=None):
+    def crearSalmon(nombre, edad, genero):
         Pez.salmones+=1
-        return Pez(nombre, edad, "oceano", genero, zona, "rojo", 6)
+        return Pez(nombre, edad, "oceano", genero, "rojo", 6)
 
     @staticmethod
-    def crearBacalao(nombre, edad, genero, zona=None):
+    def crearBacalao(nombre, edad, genero):
         Pez.bacalaos+=1
-        return Pez(nombre, edad, "oceano", genero, zona, "gris", 6)
+        return Pez(nombre, edad, "oceano", genero, "gris", 6)
     
     @staticmethod
     def cantidadPeces():
