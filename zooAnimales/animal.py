@@ -44,6 +44,11 @@ class Animal:
     
     @staticmethod
     def totalPorTipo():
+        from zooAnimales.anfibio import Anfibio
+        from zooAnimales.ave import Ave
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.pez import Pez
+        from zooAnimales.reptil import Reptil
         return f"Mamíferos: {Mamifero.cantidadMamiferos()}\n" \
                f"Aves: {Ave.cantidadAves()}\n" \
                f"Reptiles: {Reptil.cantidadReptiles()}\n" \
