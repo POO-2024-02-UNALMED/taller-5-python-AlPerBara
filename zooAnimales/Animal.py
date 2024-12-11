@@ -44,6 +44,11 @@ class Animal:
     
     @staticmethod
     def totalPorTipo():
+        from zooAnimales.Anfibio import Anfibio
+        from zooAnimales.Ave import Ave
+        from zooAnimales.Mamifero import Mamifero
+        from zooAnimales.Pez import Pez
+        from zooAnimales.Reptil import Reptil
         return f"Mamíferos: {Mamifero.cantidadMamiferos()}\n" \
                f"Aves: {Ave.cantidadAves()}\n" \
                f"Reptiles: {Reptil.cantidadReptiles()}\n" \
@@ -60,9 +65,5 @@ class Animal:
         else:
             return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
 
-from zooAnimales.Anfibio import Anfibio
-from zooAnimales.Ave import Ave
-from zooAnimales.Mamifero import Mamifero
-from zooAnimales.Pez import Pez
-from zooAnimales.Reptil import Reptil
+
 
